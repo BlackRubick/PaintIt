@@ -1,0 +1,290 @@
+*{
+  margin: 0%;
+  padding: 0%;
+}
+
+header{
+position: fixed;
+top: 0;
+left: 0%;
+width: 100%;
+display: flex;
+justify-content: space-around;
+transition: 0.7s;
+padding: 20px 20px;
+z-index: 10;
+}
+
+header.Abajo{
+  background: #fff;
+  padding: 15px , 20px;
+}
+
+header .Logo{
+position: relative;
+color: #fff;
+
+font-weight: bold;
+font-size: 2em;
+letter-spacing: 2px;
+transition: 1.5s;
+text-decoration: none;
+
+}
+
+nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header ul{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+header ul li {
+list-style: none;
+}
+
+header ul li a {
+
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif ;
+  margin: 0 15px;
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: 2px;
+  font-weight: 600;
+  transition: 00.7s;
+}
+
+.PrimerZona{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  background: url(../Img/esc.jpg);
+  
+  background-size:cover;
+  background-position: center;
+}
+
+
+header.Abajo .Logo,
+header.Abajo ul li a {
+  color: #000;
+}
+
+.titulo{
+  text-align: center ;
+  color: #000;
+  font-family: 'Gochi Hand', cursive;
+  
+}
+
+#portada {
+width: 100%;
+height: auto;
+background: url("/imagenes/58091.jpg") top center;
+background-size: cover;
+
+}
+
+#portada:before {
+content: "";
+background: rgba(5, 13, 24, 0.3);
+position: absolute;
+bottom: 0;
+top: 0;
+left: 0;
+right: 0;
+z-index: 1;
+}
+
+#portada h1 {
+margin: 0 0 10px 0;
+font-size: 64px;
+font-weight: 700;
+line-height: 56px;
+color: white;
+}
+
+#portada p {
+color: white;
+margin-bottom: 50px;
+font-size: 26px;
+font-family: "Poppins", monospace;
+text-align: center;
+
+}
+
+span{
+height: 80px;
+display: block;
+font-family: monospace;
+white-space: nowrap;
+border-right: 4px solid;
+width: 44ch;
+overflow: hidden;
+}
+
+
+
+
+.imagHome img{
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+
+
+
+
+
+.sobre{
+padding: 80px;
+text-align: left;
+}
+
+.jijijija{
+text-align: center;
+font-size: 40px;
+}
+
+@import url('https://rsms.me/inter/inter-ui.css');
+::selection {
+  background: transparent;
+}
+::-webkit-selection {
+  background: #2D2F36;
+}
+::-moz-selection {
+  background: #2D2F36;
+}
+body {
+  background: white;
+  font-family: 'Inter UI', sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+.page {
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 40px);
+  position: absolute;
+  place-content: center;
+  width: calc(100% - 40px);
+}
+@media (max-width: 767px) {
+  .page {
+    height: auto;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
+}
+.container {
+  display: flex;
+  height: 320px;
+  margin: 0 auto;
+  width: 640px;
+}
+@media (max-width: 767px) {
+  .container {
+    flex-direction: column;
+    height: 630px;
+    width: 320px;
+  }
+}
+.left {
+  background: white;
+  height: calc(100% - 40px);
+  top: 20px;
+  position: relative;
+  width: 50%;
+}
+@media (max-width: 767px) {
+  .left {
+    height: 100%;
+    left: 20px;
+    width: calc(100% - 40px);
+    max-height: 270px;
+  }
+}
+.login {
+  font-size: 50px;
+  font-weight: 900;
+  margin: 50px 40px 40px;
+}
+.eula {
+  color: #999;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 40px;
+}
+.right {
+  background: white;
+  box-shadow: 0px 0px 40px 16px rgba(0,0,0,0.22);
+  color: #F1F1F2;
+  position: relative;
+  width: 50%;
+}
+@media (max-width: 767px) {
+  .right {
+    flex-shrink: 0;
+    height: 100%;
+    width: 100%;
+    max-height: 350px;
+  }
+}
+svg {
+  position: absolute;
+  width: 320px;
+}
+path {
+  fill: none;
+  stroke: url(#linearGradient);;
+  stroke-width: 4;
+  stroke-dasharray: 240 1386;
+}
+.form {
+  margin: 40px;
+  position: absolute;
+}
+label {
+  color:  #c2c2c5;
+  display: block;
+  font-size: 14px;
+  height: 16px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+input {
+  background: transparent;
+  border: 0;
+  color: #f2f2f2;
+  font-size: 20px;
+  height: 30px;
+  line-height: 30px;
+  outline: none !important;
+  width: 100%;
+}
+input::-moz-focus-inner { 
+  border: 0; 
+}
+#submit {
+  color: #707075;
+  margin-top: 40px;
+  transition: color 300ms;
+}
+#submit:focus {
+  color: #f2f2f2;
+}
+#submit:active {
+  color: #d0d0d2;
+}
